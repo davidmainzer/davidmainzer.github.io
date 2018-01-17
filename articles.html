@@ -1,0 +1,20 @@
+---
+layout: page
+title: Articles
+---
+<div class="page-content wc-container">
+    <div class="post">
+        <h1>Some Articles</h1>
+        <ul>
+            {% for art in site.articles %}
+            <li>
+                <div class="post-time">
+                    <i class="fa fa-calendar"></i>
+                    <time>{{ art.date | date: "%d-%m-%Y" }}</time>
+                    <a href="{{ art.url | prepend: site.url }}">{{ art.title }}</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

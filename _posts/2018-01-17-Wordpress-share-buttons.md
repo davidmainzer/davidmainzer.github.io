@@ -13,7 +13,7 @@ description: Within this post I provide some information on how to add social sh
 ## Add Social Sharing Buttons To Your Wordpress Site
 
 In this post I will provide some informations on how-to add social sharing buttons to your wordpress site without the need for a plugin. There are many nice plugins for Wordpress to add Social Buttons, e.g.
-<i class="fa fa-github fa-2x"> [WPUpper Share Buttons](https://github.com/victorfreitas/wpupper-share-buttons)
+<i class="fa fa-github"> [WPUpper Share Buttons](https://github.com/victorfreitas/wpupper-share-buttons)
 
 Add the following code into `functions.php` file (located into your theme folder)
 
@@ -98,7 +98,7 @@ add_filter( 'wp_footer', 'my_social_sharing_buttons');
 
 To include *font awesome* to your wordpress theme, add the following lines into your `functions.php`. You have to adapt the path to your `font-awesome.css`.
 
-```
+```php
 // Font awesome
 function add_font_awesome() {
 wp_enqueue_style ('font-awesome', get_stylesheet_directory_uri() . '/fa/css/font-awesome.css');

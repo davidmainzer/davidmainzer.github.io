@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Add Socical Sharing Buttons To Your Wordpress Site"
+title: "Add Socical Sharing Buttons To Wordpress"
 date: 2018-01-17 21:10:06
 share: true
 tags: 
@@ -17,7 +17,7 @@ In this post I will provide some informations on how-to add social sharing butto
 
 Add the following code into `functions.php` file (located into your theme folder)
 
-```PHP
+```php
 function my_social_sharing_buttons() {
   global $post;
 

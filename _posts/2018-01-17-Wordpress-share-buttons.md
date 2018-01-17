@@ -42,9 +42,9 @@ function my_social_sharing_buttons() {
 
 
   $aftercontent .= '  <div data-element="buttons" class=" ">';
+  // You have to add a CSS class for the icons
+  // Currently we are using fontawesome icons for each social platform therefore you have to include the corresponding CSS files
   // Facebook
-  // you have to add a CSS class for the icons
-  // currently we are using fontawesome icons for each social platform therefore you have to include the corresponding CSS files
   $aftercontent .= '    <div class=" ">';
   $aftercontent .= '      <a href="'.$facebookURL.'" target="_blank" data-action="open-popup" class=" " title="Share on Facebook" rel="nofollow">';
   $aftercontent .= '        <i class="fa fa-facebook"></i>';

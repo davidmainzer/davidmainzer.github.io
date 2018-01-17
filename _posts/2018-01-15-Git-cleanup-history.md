@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to clean up GIT history"
+title: "How to remove complete GIT history"
 date: 2018-01-15 16:25:00
 share: true
 comments: false
@@ -10,7 +10,7 @@ categories:
 description: In this post I show you a step by step guide on how to remove the complete GIT history from your repository. Attention, This cannot be reversed!
 ---
 
-With these steps you will remove the complete history from your GIT repository. 
+With these steps you will **remove** the **complete** history from your GIT repository. 
 
 **So please make a backup first!**
 

@@ -21,7 +21,7 @@ If you want to know if a package (program) is available you should use `eix` [(w
 
 <h4>Installation</h4>
 ```
-emerge --ask app-portage/eix
+emerge -av app-portage/eix
 ```
 <h4>Keep eix up-to-date</h4>
 ```

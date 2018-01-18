@@ -62,7 +62,7 @@ function my_social_sharing_buttons() {
   $aftercontent .= '    </div>';
   // WhatsApp
   $aftercontent .= '    <div class=" ">';
-  $aftercontent .= '      <a href="'.$whatsappURL.'" target="_blank" data-whatsapp-wpusb="https://web.whatsapp.com/" class=" " title="Share on WhatsApp" rel="nofollow">';
+  $aftercontent .= '      <a href="'.$whatsappURL.'" target="_blank" class=" " title="Share on WhatsApp" rel="nofollow">';
   $aftercontent .= '        <i class="fa fa-whatsapp"></i>';
   $aftercontent .= '      </a>';
   $aftercontent .= '    </div>';

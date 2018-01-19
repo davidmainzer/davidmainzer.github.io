@@ -21,7 +21,7 @@
               </div>
               <div class="post-content">
                 <div id="toc" class="toc"></div>
-                {{ content }}
+                {{ content | toc }}
                 {% include share.html %}
               </div>
               {% if page.comments %}

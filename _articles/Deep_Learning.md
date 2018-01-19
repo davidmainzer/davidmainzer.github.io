@@ -22,21 +22,22 @@ I will add more information related to AI especially Deep Neural Networks from t
     author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
     publisher={MIT Press},
     note={\url{http://www.deeplearningbook.org}},
+  url={http://www.deeplearningbook.org},
     year={2016}
 }
 </textarea>
 
 <div id="bibtex_display"></div>
 <div class="bibtex_template">
-	<div class ="well">
-		<div class ="container">
-			<div class="if author" style="font-weight: bold;">
-				<span class="author"></span>
-				<span class="if year"> (<span class="year"></span>) </span>
-				<span class="if url" style="margin-left: 20px">
-					<a class="url " style="color:black; font-size:10px">[Link]</a>
-				</span>
-			</div>
+  <div class ="well">
+    <div class ="container">
+      <div class="if author" style="font-weight: bold;">
+        <span class="author"></span>
+	<span class="if year"> (<span class="year"></span>) </span>
+        <span class="if url" style="margin-left: 20px">
+	  <a class="url " style="color:black; font-size:10px">[Link]</a>
+	</span>
+      </div>
 
 			<!-- This div is what is used to determine what is displayed from the bib entry. It is written to produce (roughly) APA formatting, though it is not perfect... !-->
 			<div style="margin-left: 10px; margin-bottom:5px;">

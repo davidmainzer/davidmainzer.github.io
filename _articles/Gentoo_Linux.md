@@ -20,7 +20,7 @@ Since my employer uses Ubuntu as the operating system, I only have a Gentoo Linu
 
 ## Usefull Tools
 
-### Eix -- a set of utilities for searching
+### eix -- A Set Of Utilities For Searching
 
 If you want to know if a package (program) is available you should use `eix` [(wiki)](https://wiki.gentoo.org/wiki/Eix)!
 
@@ -28,11 +28,11 @@ If you want to know if a package (program) is available you should use `eix` [(w
 ```
 emerge -av app-portage/eix
 ```
-#### Keep eix up-to-date
+#### Keep eix Up-To-Date
 ```
 eix-sync
 ```
-#### Searching with eix
+#### Searching With eix
 To search for a package containing *foo* keyword: 
 
 ```
@@ -44,7 +44,7 @@ To search for an installed package containing *foo* keyword:
 eix -I foo
 ```
 
-## Chroot into your Gentoo System
+## Chroot Into Your Gentoo System
 
 Mount all devices and folder (Gentoo is located under `/repair/`:
 ```

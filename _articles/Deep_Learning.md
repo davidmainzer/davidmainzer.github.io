@@ -36,6 +36,7 @@ I will add more information related to AI especially Deep Neural Networks from t
 	<span class="if year"> (<span class="year"></span>) </span>
         <span class="if url" style="margin-left: 20px">
 	  <a class="url ">[Link]</a>
+	  <a class="url" style="color:black; font-size:10px">(view online)</a>
 	</span>
       </div>
       

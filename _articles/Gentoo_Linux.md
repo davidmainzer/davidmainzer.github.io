@@ -44,6 +44,17 @@ To search for an installed package containing *foo* keyword:
 eix -I foo
 ```
 
+## Update Your Gentoo System
+
+{% highlight bash %}
+eix -uc 
+quickpkg --include-config=y $(eix -uc --only-names) 
+emerge @world -uvaDN --autounmask-write --with-bdeps=y
+emerge -va @preserved-rebuild @module-rebuild 
+revdep-rebuild -v -- --ask exec bash
+{% endhighlight bash %}
+
+
 ## Chroot Into Your Gentoo System
 
 Mount all devices and folder (Gentoo is located under `/repair/`:

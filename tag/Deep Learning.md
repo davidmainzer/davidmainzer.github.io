@@ -1,1 +1,4 @@
----\nlayout: tag_index\ntag: Deep Learning \n---
+---
+layout: tag_index
+tag: Deep Learning 
+---

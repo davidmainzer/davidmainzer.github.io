@@ -1,1 +1,4 @@
----\nlayout: tag_index\ntag: Wordpress \n---
+---
+layout: tag_index
+tag: Wordpress 
+---

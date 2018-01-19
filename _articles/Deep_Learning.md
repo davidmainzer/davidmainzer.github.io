@@ -17,9 +17,12 @@ I will add more information related to AI especially Deep Neural Networks from t
 
 
 <textarea id="bibtex_input" style="display:none;">
-@book{book1,
-  author = "Donald Knuth",
-  title = "Concrete Mathematics"
+@book{Goodfellow-et-al-2016,
+    title={Deep Learning},
+    author={Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+    publisher={MIT Press},
+    note={\url{http://www.deeplearningbook.org}},
+    year={2016}
 }
 </textarea>
 

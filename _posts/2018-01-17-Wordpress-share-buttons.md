@@ -17,7 +17,7 @@ In this post I will provide some informations on how-to add social sharing butto
 
 Add the following code into `functions.php` file (located into your theme folder)
 
-```php
+{% highlight php linenos %}
 function my_social_sharing_buttons() {
   global $post;
 
@@ -94,14 +94,14 @@ function my_social_sharing_buttons() {
 
 // add stuff into wordpress footer ('wp_footer')
 add_filter( 'wp_footer', 'my_social_sharing_buttons');
-```
+{% endhighlight php %}
 
 To include *font awesome* to your wordpress theme, add the following lines into your `functions.php`. You have to adapt the path to your `font-awesome.css`.
 
-```php
+{% highlight php linenos %}
 // Font awesome
 function add_font_awesome() {
 wp_enqueue_style ('font-awesome', get_stylesheet_directory_uri() . '/fa/css/font-awesome.css');
 }
 add_action('wp_enqueue_scripts', 'add_font_awesome');
-```
+{% endhighlight php %}

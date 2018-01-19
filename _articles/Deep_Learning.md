@@ -26,7 +26,7 @@ I will add more information related to AI especially Deep Neural Networks from t
 }
 </textarea>
 
-1 <div id="bibtex_display"></div>
+<div id="bibtex_display"></div>
 <div class="bibtex_template">
 	<div class ="well">
 		<div class ="container">

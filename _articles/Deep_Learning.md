@@ -13,5 +13,5 @@ I will add more information related to AI especially Deep Neural Networks from t
 
 ## Links
 
-* [Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville
+* [Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville (2016)
 

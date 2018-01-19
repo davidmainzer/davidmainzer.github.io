@@ -23,11 +23,11 @@ If you want to know if a package (program) is available you should use `eix` [(w
 ```
 emerge -av app-portage/eix
 ```
-<h4>Keep eix up-to-date</h4>
+#### Keep eix up-to-date
 ```
 eix-sync
 ```
-<h4>Searching with eix</h4>
+#### Searching with eix
 To search for a package containing *foo* keyword: 
 
 ```
@@ -59,7 +59,18 @@ source /etc/profile
 export PS1="(chroot) $PS1"
 ```
 
-<h2>Usefull Links</h2>
+## Cleanup Gentoo System
+
+cleanup source directory (`distfiles`)
+```
+eclean -p distfiles
+```
+cleanup binary files from system
+```
+eclean packages
+```
+
+## Usefull Links
 * [Gentoo's official website](https://www.gentoo.org/ "Gentoo's official website")
 * [Gentoo's official Wiki page](https://wiki.gentoo.org/wiki/Main_Page "Gentoo's official Wiki page")
 * [Gentoo's Overlay Search Page](http://gpo.zugaina.org/ "Gentoo's Overlay Search Page")

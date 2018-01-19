@@ -35,17 +35,18 @@ I will add more information related to AI especially Deep Neural Networks from t
         <span class="author"></span>
 	<span class="if year"> (<span class="year"></span>) </span>
         <span class="if url" style="margin-left: 20px">
-	  <a class="url " style="color:black; font-size:10px">[Link]</a>
+	  <a class="url ">[Link]</a>
 	</span>
       </div>
-
-			<!-- This div is what is used to determine what is displayed from the bib entry. It is written to produce (roughly) APA formatting, though it is not perfect... !-->
-			<div style="margin-left: 10px; margin-bottom:5px;">
-				<span class="title "></span>.
-				<span class="if editor ">
-					In <span class="editor "></span> (Eds.),
-				</span>
-				<span class="if booktitle ">
+      
+      <!-- This div is what is used to determine what is displayed from the bib entry. 
+           It is written to produce (roughly) APA formatting, though it is not perfect... -->
+      <div style="margin-left: 10px; margin-bottom:5px;">
+        <span class="title "></span>.
+        <span class="if editor ">
+          In <span class="editor "></span> (Eds.),
+        </span>
+        <span class="if booktitle ">
 					<span class="booktitle " style="font-style: italic;"></span>
 					<span class="if pages ">
 						(p. <span class="pages "></span>).

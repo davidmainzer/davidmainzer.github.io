@@ -25,24 +25,26 @@ Since my employer uses Ubuntu as the operating system, I only have a Gentoo Linu
 If you want to know if a package (program) is available you should use `eix` [(wiki)](https://wiki.gentoo.org/wiki/Eix)!
 
 #### Installation
-```
+{% highlight bash %}
 emerge -av app-portage/eix
-```
+{% endhighlight bash %}
+
 #### Keep eix Up-To-Date
-```
+{% highlight bash %}
 eix-sync
-```
+{% endhighlight bash %}
+
 #### Searching With eix
 To search for a package containing *foo* keyword: 
 
-```
+{% highlight bash %}
 eix foo
-```
+{% endhighlight bash %}
 
 To search for an installed package containing *foo* keyword:
-```
+{% highlight bash %}
 eix -I foo
-```
+{% endhighlight bash %}
 
 ## Update Your Gentoo System
 
@@ -58,33 +60,36 @@ revdep-rebuild -v -- --ask exec bash
 ## Chroot Into Your Gentoo System
 
 Mount all devices and folder (Gentoo is located under `/repair/`:
-```
+{% highlight bash %}
 mount --rbind /dev /repair/dev
 mount --make-rslave /repair/dev
 mount -t proc /proc /repair/proc
 mount --rbind /sys /repair/sys
 mount --make-rslave /repair/sys
 mount --rbind /tmp /repair/tmp
-```
+{% endhighlight bash %}
 
 chroot into Gentoo:
-```
+{% highlight bash %}
 chroot /repair /bin/bash
 env-update
 source /etc/profile
 export PS1="(chroot) $PS1"
-```
+{% endhighlight bash %}
 
 ## Cleanup Gentoo System
 
 cleanup source directory (`distfiles`)
-```
+
+{% highlight bash %}
 eclean -p distfiles
-```
+{% endhighlight bash %}
+
 cleanup binary files from system
-```
+
+{% highlight bash %}
 eclean packages
-```
+{% endhighlight bash %}
 
 ## Usefull Links
 * [Gentoo's official website](https://www.gentoo.org/ "Gentoo's official website")

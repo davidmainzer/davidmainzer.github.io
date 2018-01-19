@@ -11,3 +11,6 @@ tags:
 
 I will add more information related to AI especially Deep Neural Networks from time to time.
 
+## Links
+
+* http://www.deeplearningbook.org/

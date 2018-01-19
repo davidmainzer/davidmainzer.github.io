@@ -3,6 +3,7 @@ layout: post
 title:  "Gentoo Linux"
 date:   2018-01-16 18:50:00
 share: true
+toc: true
 comments: false
 tags:
  - Gentoo

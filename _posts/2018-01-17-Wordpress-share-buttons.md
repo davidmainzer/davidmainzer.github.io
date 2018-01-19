@@ -3,6 +3,7 @@ layout: post
 title: "Add Socical Sharing Buttons To Wordpress"
 date: 2018-01-17 21:10:06
 share: true
+toc: true
 tags: 
 - Wordpress
 - PHP

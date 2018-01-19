@@ -58,3 +58,4 @@ exclude: ['README.md', 'LICENSE']
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-toc

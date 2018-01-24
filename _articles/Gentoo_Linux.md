@@ -50,11 +50,14 @@ eix -I foo
 
 {% highlight bash %}
 # update your package database
-eix -uc 
+eix -uc
+# create binary package for each package which will be updated later
 quickpkg --include-config=y $(eix -uc --only-names) 
+# update all packages
 emerge @world -uvaDN --autounmask-write --with-bdeps=y
+# rebuild packages if need
 emerge -va @preserved-rebuild @module-rebuild 
-revdep-rebuild -v -- --ask exec bash
+revdep-rebuild -v -- --ask
 {% endhighlight bash %}
 
 

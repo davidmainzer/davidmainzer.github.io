@@ -49,6 +49,7 @@ eix -I foo
 ## Update Your Gentoo System
 
 {% highlight bash %}
+# update your package database
 eix -uc 
 quickpkg --include-config=y $(eix -uc --only-names) 
 emerge @world -uvaDN --autounmask-write --with-bdeps=y

@@ -112,4 +112,5 @@ eclean packages
 ## Usefull Links
 * [Gentoo's official website](https://www.gentoo.org/ "Gentoo's official website")
 * [Gentoo's official Wiki page](https://wiki.gentoo.org/wiki/Main_Page "Gentoo's official Wiki page")
+* [Gentoo's official package page](https://packages.gentoo.org/ "Gentoo's official package page")
 * [Gentoo's Overlay Search Page](http://gpo.zugaina.org/ "Gentoo's Overlay Search Page")

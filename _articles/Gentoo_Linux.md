@@ -61,16 +61,16 @@ emerge -va @preserved-rebuild @module-rebuild
 revdep-rebuild -v -- --ask
 {% endhighlight bash %}
 
-Maybe you want to remove unused binary packages from time to time:
+Maybe you want to remove unused binary packages from time to time. I prefer eclean because I have gentoolkit installed already.
 
 ### Cleanup with eclean
-eclean is part of app-portage/gentoolkit
+`eclean` is part of `app-portage/gentoolkit`
 {% highlight bash %}
 eclean packages
 {% endhighlight bash %}
 
 ### Cleanup with qpkg
-qpkg is part of app-portage/portage-utils
+`qpkg` is part of `app-portage/portage-utils`
 {% highlight bash %}
 qpkg -c
 {% endhighlight bash %}

@@ -47,6 +47,7 @@ eix -I foo
 {% endhighlight bash %}
 
 ## Update Your Gentoo System
+The following lines will update your Gentoo System. The first step is to create binary packages (with config files) before performing update steps to keep a backup of the current installed package version.
 
 {% highlight bash %}
 # update your package database

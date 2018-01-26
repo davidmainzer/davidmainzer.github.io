@@ -100,6 +100,7 @@ export PS1="(chroot) $PS1"
 cleanup source directory (`distfiles`)
 
 {% highlight bash %}
+# -p -- only display what would be cleaned, remove -p after checking
 eclean -p distfiles
 {% endhighlight bash %}
 

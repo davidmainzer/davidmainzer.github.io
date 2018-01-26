@@ -107,7 +107,8 @@ eclean -p distfiles
 cleanup binary files from system
 
 {% highlight bash %}
-eclean packages
+# -p -- only display what would be cleaned, remove -p after checking
+eclean -p packages
 {% endhighlight bash %}
 
 ## Usefull Links

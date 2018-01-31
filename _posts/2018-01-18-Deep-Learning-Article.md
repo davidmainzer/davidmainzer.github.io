@@ -14,8 +14,8 @@ description: I will share Links and information about this topic.
 
 Today I start writing an article about Deep Learning. Hopefully I will add content soon. Here you can find 
 
+[my article]("articles/Deep_Learning")
 
-
-[Some Link]({% post_url articles/Deep_Learning %})
+{{ site.baseurl }}{% link articles/Deep_Learning.md %}
 
 , still work in progress.

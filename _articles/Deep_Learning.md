@@ -56,9 +56,11 @@ This is a summary of some of the resources that I have either found useful mysel
   * http://densepose.org/
   
 <textarea id="bibtex_input" style="display:none;">
-@book{book1,
-  author = "Donald Knuth",
-  title = "Concrete Mathematics"
+@book{Guler2018DensePose,
+  title={DensePose: Dense Human Pose Estimation In The Wild},
+  author={R\{i}za Alp G\"uler, Natalia Neverova, Iasonas Kokkinos},
+  journal={arXiv},
+  year={2018}
 }
 </textarea>
 <div id="bibtex_display"></div>

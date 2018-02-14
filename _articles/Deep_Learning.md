@@ -54,3 +54,10 @@ This is a summary of some of the resources that I have either found useful mysel
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
   * http://densepose.org/
+  
+<textarea id="bibtex_input" style="display:none;">
+@book{book1,
+  author = "Donald Knuth",
+  title = "Concrete Mathematics"
+}
+</textarea>

@@ -55,7 +55,7 @@ This is a summary of some of the resources that I have either found useful mysel
 <bibtex src="{{ site.url }}/bibtex/2018_-_DensePose.bib"></bibtex>
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
-  * [<i class="fa fa-github fa-2x"></i> Project Site](http://densepose.org/ "Project Website")
+  * [<i class="fa fa-external-link "></i> Project Site](http://densepose.org/ "Project Website")
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 
 <bibtex src="{{ site.url }}/bibtex/2015_-_DeepLearning_LeCunHinton.bib"></bibtex>

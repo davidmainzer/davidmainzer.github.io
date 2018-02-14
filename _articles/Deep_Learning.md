@@ -14,11 +14,11 @@ tags:
 
 <div class="bibtex_template">
   <div>
-    <span class="if year">
+    <span class="if year" style="font-weight: bold;">
       <span class="year"></span>, 
     </span>
     <span class="if author">
-      <span class="author" style="font-weight: bold;" ></span>
+      <span class="author" style="font-weight: bold;"></span>--
     </span>
     <span class="title"></span>
     <span class="if url" style="margin-left: 20px">

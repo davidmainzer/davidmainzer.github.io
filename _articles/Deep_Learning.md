@@ -61,3 +61,4 @@ This is a summary of some of the resources that I have either found useful mysel
   title = "Concrete Mathematics"
 }
 </textarea>
+<div id="bibtex_display"></div>

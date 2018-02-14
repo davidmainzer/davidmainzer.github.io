@@ -18,13 +18,15 @@ tags:
       <span class="year"></span>, 
     </span>
     <span class="if author">
-    <span class="author" style="font-weight: bold;" ></span>
+      <span class="author" style="font-weight: bold;" ></span>
+    </span>
+    <span class="title"></span>
     <span class="if url" style="margin-left: 20px">
       <a class="url" style="color:black; font-size:10px">(view online)</a>
     </span>
 <!--<div>
   <div style="margin-left: 10px; margin-bottom:5px;">-->
-    <span class="title"></span>
+    
   </div>
 </div>
 

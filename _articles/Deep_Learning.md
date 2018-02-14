@@ -59,5 +59,6 @@ This is a summary of some of the resources that I have either found useful mysel
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 
 <bibtex src="{{ site.url }}/bibtex/2015_-_DeepLearning_LeCunHinton.bib"></bibtex>
-* <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>
+* Review paper from Yann LeCun, Yoshua Bengio & Geoffrey Hinton
+  * <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>
 

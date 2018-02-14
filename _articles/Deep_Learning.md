@@ -18,7 +18,7 @@ tags:
       <span class="year"></span>, 
     </span>
     <span class="if author">
-      <span class="author" style="font-weight: bold;"></span>&nbsp;&#8210;&nbsp;
+      <span class="author" style="font-weight: bold;"></span>&nbsp;&#8210;
     </span>
     <span class="title"></span>
     <span class="if url" style="margin-left: 20px">
@@ -74,9 +74,10 @@ This is a summary of some of the resources that I have either found useful mysel
 <textarea id="bibtex_input" style="display:none;">
 @book{Guler2018DensePose,
   title={DensePose: Dense Human Pose Estimation In The Wild},
-  author={R\{i}za Alp Güler, Natalia Neverova, Iasonas Kokkinos},
+  author={Riza Alp Güler, Natalia Neverova, Iasonas Kokkinos},
   journal={arXiv},
-  year={2018}
+  year={2018},
+  url={https://arxiv.org/abs/1802.00434}
 }
 </textarea>
 

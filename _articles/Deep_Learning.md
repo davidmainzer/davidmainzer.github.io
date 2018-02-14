@@ -19,8 +19,11 @@ This is a summary of some of the resources that I have either found useful mysel
 ### Classes
 
 * [Coursera's Machine Learning Class](https://www.coursera.org/learn/machine-learning "Coursera's Machine Learning Class") - This Coursera class, taught by Andrew Ng
+* [Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim](https://www.ismll.uni-hildesheim.de/lehre/ml2-17s/script/index_en.html "Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim")
 
 ### Reading
+
+#### Books
 
 * [Machine Learning by Chris Bishop](http://www.springer.com/gb/book/9780387310732)
 * [Machine Learning by Kevin Murphy](https://mitpress.mit.edu/books/machine-learning-0)
@@ -38,6 +41,13 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Programming / Frameworks
 
+#### Books
+
 * [Keras](https://keras.io/ "Keras")
 * [TensorFlow](https://www.tensorflow.org/ "TensorFlow")
 * [Theano](http://www.deeplearning.net/software/theano/ "Theano")
+
+#### Some State-of-The-Art Paper
+
+* [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
+  * http://densepose.org/

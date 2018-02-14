@@ -77,7 +77,7 @@ This is a summary of some of the resources that I have either found useful mysel
   author={Riza Alp Güler, Natalia Neverova, Iasonas Kokkinos},
   journal={arXiv},
   year={2018},
-  url={https://arxiv.org/abs/1802.00434}
+  url={"\url{https://arxiv.org/abs/1802.00434}"}
 }
 </textarea>
 

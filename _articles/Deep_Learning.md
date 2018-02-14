@@ -22,7 +22,7 @@ tags:
     </span>
     <span class="title"></span>
     <span class="if url" style="margin-left: 20px">
-      <a class="url" style="font-size:10px"><span class="url"></span>(view online)</a>
+      <a class="url" style="font-size:10px">(view online)</a>
     </span>
 <!--<div>
   <div style="margin-left: 10px; margin-bottom:5px;">-->

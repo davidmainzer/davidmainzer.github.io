@@ -10,26 +10,6 @@ tags:
 ---
 {% include bibtex.html %}
 
-<div class="bibtex_template">
-  <div>
-    <span class="if year" style="font-weight: bold;">
-      <span class="year"></span>, 
-    </span>
-    <span class="if author">
-      <span class="author" style="font-weight: bold;"></span>&nbsp;&#8210;
-    </span>
-    <span class="title"></span>
-    <span class="if url" style="margin-left: 20px">
-      <a class="url" style="font-size:10px">(view online)</a>
-    </span>
-<!--<div>
-  <div style="margin-left: 10px; margin-bottom:5px;">-->
-    
-  </div>
-</div>
-
-
-
 *I will add more information related to AI especially Deep Neural Networks from time to time.*
 
 

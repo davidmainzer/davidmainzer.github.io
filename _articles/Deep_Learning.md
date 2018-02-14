@@ -4,6 +4,7 @@ title:  "Information about Deep Learning"
 date:   2018-01-16 09:49:00
 share: true
 comments: false
+description: I will share Links and information about the topic machine learning.
 tags:
  - DeepLearning
  - AI

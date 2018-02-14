@@ -52,12 +52,11 @@ This is a summary of some of the resources that I have either found useful mysel
 
 #### Some State-of-The-Art Paper
 
-<bibtex src="bibtex/2018_-_DensePose.bib"></bibtex>
+<bibtex src="{{ site.url }}/bibtex/2018_-_DensePose.bib"></bibtex>
 
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
   * http://densepose.org/
-  * <div class="bibtex_display"></div>
+  * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 
-<div class="bibtex_display" bibtexkeys="knuth1890math"></div>
-<div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
+

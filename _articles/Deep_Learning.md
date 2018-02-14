@@ -8,6 +8,7 @@ tags:
  - DeepLearning
  - AI
 ---
+
 {% include bibtex.html %}
 
 *I will add more information related to AI especially Deep Neural Networks from time to time.*

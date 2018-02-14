@@ -8,9 +8,26 @@ tags:
  - DeepLearning
  - AI
 ---
-
+<!-- https://github.com/pcooksey/bibtex-js/ -->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.rawgit.com/pcooksey/bibtex-js/b81606e85986fa8ad0eb66954493bc1c0b3d7ab1/src/bibtex_js.js"></script>
+
+<div class="bibtex_template">
+  <div class="if author" style="font-weight: bold;">
+    <span class="if year">
+      <span class="year"></span>, 
+    </span>
+    <span class="author"></span>
+    <span class="if url" style="margin-left: 20px">
+      <a class="url" style="color:black; font-size:10px">(view online)</a>
+    </span>
+<!--<div>
+  <div style="margin-left: 10px; margin-bottom:5px;">-->
+    <span class="title"></span>
+  </div>
+</div>
+
+
 
 *I will add more information related to AI especially Deep Neural Networks from time to time.*
 

@@ -68,10 +68,6 @@ This is a summary of some of the resources that I have either found useful mysel
 * [Theano](http://www.deeplearning.net/software/theano/ "Theano")
 
 #### Some State-of-The-Art Paper
-
-* [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
-  * http://densepose.org/
-  
 <textarea id="bibtex_input" style="display:none;">
 @book{Guler2018DensePose,
   title={DensePose: Dense Human Pose Estimation In The Wild},
@@ -80,4 +76,7 @@ This is a summary of some of the resources that I have either found useful mysel
   year={2018}
 }
 </textarea>
-<div id="bibtex_display"></div>
+
+* [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
+  * http://densepose.org/
+  * <div id="bibtex_display"></div>

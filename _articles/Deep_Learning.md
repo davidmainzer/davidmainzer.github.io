@@ -22,7 +22,7 @@ tags:
     </span>
     <span class="title"></span>
     <span class="if url" style="margin-left: 20px">
-      <a class="url" style="color:black; font-size:10px">(view online)</a>
+      <a class="url" style="color:black; font-size:10px"><span class="url"></span>(view online)</a>
     </span>
 <!--<div>
   <div style="margin-left: 10px; margin-bottom:5px;">-->
@@ -80,6 +80,7 @@ This is a summary of some of the resources that I have either found useful mysel
   url={"\url{https://arxiv.org/abs/1802.00434}"}
 }
 </textarea>
+
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
   * http://densepose.org/

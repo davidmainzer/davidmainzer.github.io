@@ -10,6 +10,13 @@ tags:
  - Article
 ---
 
+TEST 
+
+{% assign my_min = page.toc_min | default: site.toc_min | default: 1 %}
+{% assign my_max = page.toc_max | default: site.toc_max | default: 3 %}
+
+{% include toc.html html=content sanitize=true h_min=my_min h_max=my_max %}
+
 {% include toc.html html=content %}
 
 {% include bibtex.html %}

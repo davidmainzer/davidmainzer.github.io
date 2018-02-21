@@ -6,7 +6,7 @@ layout: page
 {% for tag in site.tags %}
   echo $'---\nlayout: tag_index\ntag: {{ tag[0] }} \n---' > '{{ tag[0] }}.md' &{% endfor %}
 
-{% for tag in article.tags %}
+{% for tag in articles.tags %}
   echo $'---\nlayout: tag_index\ntag: {{ tag[0] }} \n---' > '{{ tag[0] }}.md' &{% endfor %}
 
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Security"
 date:   2018-02-21 10:08:00
 share: true

@@ -14,18 +14,3 @@ title: Tags
 		</ul>
 	</div>
 </div>
-
-<h1>Tags NEW</h1>  
-
-<div class="page-content wc-container text-center">
-{% capture site_tags %}
-  [
-  {% for tag in site.tags %}
-    {"text":"{{ tag[0] }}","size":{{ tag[1].size }}, "url":"{{ site.url }}/tag/{{tag[0]}}"}
-  {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-  ]
-{% endcapture %}
-
-
-</div>

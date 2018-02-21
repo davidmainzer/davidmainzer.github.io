@@ -18,5 +18,21 @@ layout: page
         {% endfor %}
       {% endfor %}
     </ul>
+    
+    
+    <ul>
+      {% for art in site.articles %}
+        {% for tag in art.tags %}
+          {% if tag == page.tag %}
+          <li class="archive_list">
+            <time>{{ art.date | date_to_string }}</time>
+            <a class="archive_list_article_link" href='{{ art.url | relative_url }}'>{{art.title}}</a>
+            <p>{{art.description}}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    
   </div>
 </div>

@@ -14,10 +14,6 @@ tags:
 
 Since my employer uses Ubuntu as the operating system, I only have a Gentoo Linux running on my private server.
 
-## Table of Content
-* TOC
-{:toc}
-
 ## Usefull Tools
 
 ### eix -- A Set Of Utilities For Searching

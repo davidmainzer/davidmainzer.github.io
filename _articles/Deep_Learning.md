@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Information about Deep Learning"
 date:   2018-01-16 09:49:00
 share: true

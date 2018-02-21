@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Gentoo Linux"
 date:   2018-01-16 18:50:00
 share: true

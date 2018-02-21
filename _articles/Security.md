@@ -14,7 +14,6 @@ tags:
 
 *I will add more information related to Security issues from time to time.*
 
-## Table of Content
 * TOC
 {:toc}
 

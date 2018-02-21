@@ -10,6 +10,8 @@ tags:
  - Article
 ---
 
+{% include toc.html html=content %}
+
 {% include bibtex.html %}
 
 *I will add more information related to Security issues from time to time.*

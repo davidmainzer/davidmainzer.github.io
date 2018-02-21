@@ -14,6 +14,8 @@ tags:
 
 *I will add more information related to Security issues from time to time.*
 
+{{ toc }}
+
 * TOC
 {:toc}
 

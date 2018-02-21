@@ -11,7 +11,7 @@ title: Tags
 			{% for tag in site.tags %}
 			<li><a href="{{ '/tag/' | append:tag[0] | relative_url }}">{{ tag[0] }}</a></li>
 			{% endfor %}
-			{% for tag in article.tags %}
+			{% for tag in articles.tags %}
 			<li><a href="{{ '/tag/' | append:tag[0] | relative_url }}">{{ tag[0] }}</a></li>
 			{% endfor %}
 		</ul>

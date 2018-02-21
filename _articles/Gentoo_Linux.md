@@ -10,7 +10,7 @@ tags:
  - Article
 ---
 
-I will add more information related to Gentoo Linux from time to time. 
+*I will add more information related to Gentoo Linux from time to time.*
 
 Since my employer uses Ubuntu as the operating system, I only have a Gentoo Linux running on my private server.
 

@@ -25,5 +25,5 @@ title: Tags
   ]
 {% endcapture %}
 
-{% include tag-cloud.html %}
+
 </div>

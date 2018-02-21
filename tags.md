@@ -15,6 +15,8 @@ title: Tags
 	</div>
 </div>
 
+<h1>Tags NEW</h1>  
+
 <div class="page-content wc-container text-center">
 {% capture site_tags %}
   [

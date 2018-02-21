@@ -12,7 +12,7 @@ tags:
 
 *I will add more information related to Security issues from time to time.*
 
-{% include toc.html html=content %}
+
 
 {% include bibtex.html %}
 
@@ -31,3 +31,5 @@ tags:
   * Spectre paper 
     * <div class="bibtex_display" bibtexkeys="Kocher2018spectre"></div>
   * [Official page with code samples](https://github.com/IAIK/meltdown)
+
+{% include toc.html html=content %}

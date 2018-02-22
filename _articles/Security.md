@@ -30,5 +30,5 @@ tags:
   * Spectre paper 
     * <div class="bibtex_display" bibtexkeys="Kocher2018spectre"></div>
   * [Official page with code samples](https://github.com/IAIK/meltdown)
-* (Flush+Reload: A High Resolution, Low Noise, L3 Cache Side-Channel Attack)[https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-yarom.pdf]
+* [Flush+Reload: A High Resolution, Low Noise, L3 Cache Side-Channel Attack](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-yarom.pdf)
   * <div class="bibtex_display" bibtexkeys="yarom2014flush"></div>

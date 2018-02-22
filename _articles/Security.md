@@ -25,6 +25,8 @@ tags:
 * [Official Website of Meltdown and Spectre](https://meltdownattack.com/)
   * Meltdown paper 
     * <div class="bibtex_display" bibtexkeys="Lipp2018meltdown"></div>
+    * KAISER originally developed to prevent side-channel attacks targeting KASLR, inadvertently protects against Meltdown as well.    
+      * <div class="bibtex_display" bibtexkeys="gruss2017kaslr"></div>
   * Spectre paper 
     * <div class="bibtex_display" bibtexkeys="Kocher2018spectre"></div>
   * [Official page with code samples](https://github.com/IAIK/meltdown)

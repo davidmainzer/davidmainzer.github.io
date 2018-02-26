@@ -15,12 +15,17 @@ tags:
 
 
 {% include bibtex.html %}
+<bibtex src="{{ site.url }}/bibtex/2018_-_Security.bib"></bibtex>
 
 ## Security
 
+### Security and Vehicles
+* [THE CAR HACKER’S HANDBOOK -- A Guide for the Penetration Tester by Craig Smith](https://opengarages.org/handbook/)
+  * <div class="bibtex_display" bibtexkeys="smith2016car"></div>
+
 ### Current Security Attacks
 
-<bibtex src="{{ site.url }}/bibtex/2018_-_Security.bib"></bibtex>
+
 
 * [Official Website of Meltdown and Spectre](https://meltdownattack.com/)
   * Meltdown paper 

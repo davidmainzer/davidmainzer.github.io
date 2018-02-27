@@ -69,7 +69,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 #### Some Image-based Classification Publications
 
-* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/pdf/1611.06455.pdf) [<i class="fa fa-external-link-alt "></i> <i class="fa fa-file-pdf "></i>](https://arxiv.org/pdf/1611.06455.pdf)
+* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/pdf/1611.06455.pdf) [<i class="fa fa-external-link "></i> <i class="fa fa-file-pdf-o "></i>](https://arxiv.org/pdf/1611.06455.pdf)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/WangYO16"></div>
 * [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>
@@ -88,7 +88,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 ## Deep Learning -- Some State-of-The-Art Publications
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434.pdf)
-  * [<i class="fa fa-external-link-alt "></i> Project Site](http://densepose.org/ "Project Website")
+  * [<i class="fa fa-external-link "></i> Project Site](http://densepose.org/ "Project Website")
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 * [One Model to Learn them All](https://arxiv.org/pdf/1706.05137.pdf)
   * <div class="bibtex_display" bibtexkeys="kaiser2017one"></div>

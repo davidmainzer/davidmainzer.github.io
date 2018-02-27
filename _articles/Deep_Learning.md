@@ -81,6 +81,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 #### Some Data-based Classification Publications
 * [Quantum support vector machine for big data classification](https://arxiv.org/abs/1307.0471.pdf)
+  * <div class="bibtex_display" bibtexkeys="rebentrost2014quantum"></div>
 * [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/pdf/1408.5882.pdf)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Kim14f"></div>
 

@@ -60,13 +60,20 @@ This is a summary of some of the resources that I have either found useful mysel
 Any classification tasks depend upon labeled datasets. 
 Labeled datasets are used to transfer human's knowledge to the dataset in order for an artificial network to extract information from this dataset to learn the correlation between labels and data information.
 Using labeled datasets is known as *supervised learning*. In the following I provide a list (without any claim to completeness) of some classification tasks:
-	• Detect faces, identify people in images, recognize facial expressions (angry, joyful)
-	• Detect differnt types of objects in images (animals, flowers, stop signs, pedestrians, lane markers, traffic lights, ...)
-	• Recognize gestures
-	• Detect voices, identify speakers, transcribe speech to text, recognize sentiment in voices
-	• Classify text as spam (in emails), or fraudulent (in insurance claims); recognize sentiment in text (customer feedback)
 
+* Detect faces, identify people in images, recognize facial expressions (angry, joyful)
+* Detect differnt types of objects in images (animals, flowers, stop signs, pedestrians, lane markers, traffic lights, ...)
+* Recognize gestures
+* Detect voices, identify speakers, transcribe speech to text, recognize sentiment in voices
+* Classify text as spam (in emails), or fraudulent (in insurance claims); recognize sentiment in text (customer feedback)
 
+#### Some Paper
+
+* [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+  * https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+  * <div class="bibtex_display" bibtexkeys="NIPS2012_4824"></div>
+* [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239)
+  * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>
 
 
 ### Some State-of-The-Art Paper

@@ -11,6 +11,7 @@ tags:
 ---
 
 {% include bibtex.html %}
+<bibtex src="{{ site.url }}/bibtex/DeepLearning.bib"></bibtex>
 
 *I will add more information related to AI especially Deep Neural Networks from time to time.*
 
@@ -44,21 +45,20 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Programming / Frameworks
 
-#### Books
-
 * [Keras](https://keras.io/ "Keras")
 * [TensorFlow](https://www.tensorflow.org/ "TensorFlow")
 * [Theano](http://www.deeplearning.net/software/theano/ "Theano")
 
-#### Some State-of-The-Art Paper
+### Some State-of-The-Art Paper
 
-<bibtex src="{{ site.url }}/bibtex/2018_-_DensePose.bib"></bibtex>
+
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
   * [<i class="fa fa-external-link "></i> Project Site](http://densepose.org/ "Project Website")
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 
-<bibtex src="{{ site.url }}/bibtex/2015_-_DeepLearning_LeCunHinton.bib"></bibtex>
 * Review paper from Yann LeCun, Yoshua Bengio & Geoffrey Hinton
   * <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>
 
+* [Accessorize to a crime: Real and stealthy attacks on state-of-the-art face recognition](https://www.cs.cmu.edu/~sbhagava/papers/face-rec-ccs16.pdf)
+  * <div class="bibtex_display" bibtexkeys="sharif2016accessorize"></div>

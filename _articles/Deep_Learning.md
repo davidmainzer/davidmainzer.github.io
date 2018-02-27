@@ -36,6 +36,8 @@ This is a summary of some of the resources that I have either found useful mysel
 
 * [SciKitLearn](http://scikit-learn.org/stable/ "SciKitLearn")
 
+<hr>
+
 ## Deep Learning
 
 ### Reading
@@ -48,6 +50,24 @@ This is a summary of some of the resources that I have either found useful mysel
 * [Keras](https://keras.io/ "Keras")
 * [TensorFlow](https://www.tensorflow.org/ "TensorFlow")
 * [Theano](http://www.deeplearning.net/software/theano/ "Theano")
+
+<hr>
+
+## Different Machine Learning Tasks
+
+### Classification
+
+Any classification tasks depend upon labeled datasets. 
+Labeled datasets are used to transfer human's knowledge to the dataset in order for an artificial network to extract information from this dataset to learn the correlation between labels and data information.
+Using labeled datasets is known as *supervised learning*. In the following I provide a list (without any claim to completeness) of some classification tasks:
+	• Detect faces, identify people in images, recognize facial expressions (angry, joyful)
+	• Detect differnt types of objects in images (animals, flowers, stop signs, pedestrians, lane markers, traffic lights, ...)
+	• Recognize gestures
+	• Detect voices, identify speakers, transcribe speech to text, recognize sentiment in voices
+	• Classify text as spam (in emails), or fraudulent (in insurance claims); recognize sentiment in text (customer feedback)
+
+
+
 
 ### Some State-of-The-Art Paper
 

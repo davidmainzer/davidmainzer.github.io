@@ -69,7 +69,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 #### Some Image-based Classification Publications
 
-* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/pdf/1611.06455.pdf) [<i class="fa fa-external-link "></i> <i class="fa fa-file-pdf-o "></i>](https://arxiv.org/pdf/1611.06455.pdf)
+* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/pdf/1611.06455.pdf) [<i class="fa fa-external-link fa-lg"></i> <i class="fa fa-file-pdf-o "></i>](https://arxiv.org/pdf/1611.06455.pdf)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/WangYO16"></div>
 * [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>

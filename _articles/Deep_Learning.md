@@ -51,14 +51,12 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Some State-of-The-Art Paper
 
-
-
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434)
   * [<i class="fa fa-external-link "></i> Project Site](http://densepose.org/ "Project Website")
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
-
-* Review paper from Yann LeCun, Yoshua Bengio & Geoffrey Hinton
-  * <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>
-
+* [One Model to Learn them All](https://arxiv.org/pdf/1706.05137.pdf)
+  * <div class="bibtex_display" bibtexkeys="kaiser2017one"></div>
 * [Accessorize to a crime: Real and stealthy attacks on state-of-the-art face recognition](https://www.cs.cmu.edu/~sbhagava/papers/face-rec-ccs16.pdf)
   * <div class="bibtex_display" bibtexkeys="sharif2016accessorize"></div>
+* Review paper from Yann LeCun, Yoshua Bengio & Geoffrey Hinton
+  * <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>

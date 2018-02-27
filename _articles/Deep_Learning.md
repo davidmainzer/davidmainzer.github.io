@@ -22,19 +22,19 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Classes
 
-* [Coursera's Machine Learning Class](https://www.coursera.org/learn/machine-learning "Coursera's Machine Learning Class") - This Coursera class, taught by Andrew Ng
-* [Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim](https://www.ismll.uni-hildesheim.de/lehre/ml2-17s/script/index_en.html "Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim")
+* [<i class="fa fa-external-link "></i> Coursera's Machine Learning Class](https://www.coursera.org/learn/machine-learning "Coursera's Machine Learning Class") - This Coursera class, taught by Andrew Ng
+* [<i class="fa fa-external-link "></i> Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim](https://www.ismll.uni-hildesheim.de/lehre/ml2-17s/script/index_en.html "Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim")
 
 ### Reading
 
 #### Books
 
-* [Machine Learning by Chris Bishop](http://www.springer.com/gb/book/9780387310732)
-* [Machine Learning by Kevin Murphy](https://mitpress.mit.edu/books/machine-learning-0)
+* [<i class="fa fa-external-link "></i> Machine Learning by Chris Bishop](http://www.springer.com/gb/book/9780387310732)
+* [<i class="fa fa-external-link "></i> Machine Learning by Kevin Murphy](https://mitpress.mit.edu/books/machine-learning-0)
 
 ### Programming
 
-* [SciKitLearn](http://scikit-learn.org/stable/ "SciKitLearn")
+* [<i class="fa fa-external-link "></i> SciKitLearn](http://scikit-learn.org/stable/ "SciKitLearn")
 
 <hr>
 
@@ -42,14 +42,14 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Reading
 
-* [Neural Networks & Deep Learning](http://neuralnetworksanddeeplearning.com/ "Neural Networks & Deep Learning") by Michael Nielsen
-* [Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville (2016)
+* [<i class="fa fa-external-link "></i> Neural Networks & Deep Learning](http://neuralnetworksanddeeplearning.com/ "Neural Networks & Deep Learning") by Michael Nielsen
+* [<i class="fa fa-external-link "></i> Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville (2016)
 
 ### Programming / Frameworks
 
-* [Keras](https://keras.io/ "Keras")
-* [TensorFlow](https://www.tensorflow.org/ "TensorFlow")
-* [Theano](http://www.deeplearning.net/software/theano/ "Theano")
+* [<i class="fa fa-external-link "></i> Keras](https://keras.io/ "Keras")
+* [<i class="fa fa-external-link "></i> TensorFlow](https://www.tensorflow.org/ "TensorFlow")
+* [<i class="fa fa-external-link "></i> Theano](http://www.deeplearning.net/software/theano/ "Theano")
 
 <hr>
 
@@ -73,8 +73,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/WangYO16"></div>  
 * [<i class="fa fa-external-link "></i> Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239)&emsp;[<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/abs/1306.0239.pdf)
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>
-* [<i class="fa fa-external-link "></i> ImageNet Classification with Deep Convolutional Neural Networks &emsp; <i class="fa fa-file-pdf-o fa-lg"></i>](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
-  * https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+* [<i class="fa fa-external-link "></i> ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)&emsp;[<i class="fa fa-file-pdf-o fa-lg"></i>](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
   * <div class="bibtex_display" bibtexkeys="NIPS2012_4824"></div>
 
 

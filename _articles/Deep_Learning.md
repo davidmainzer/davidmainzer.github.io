@@ -69,11 +69,11 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 #### Some Image-based Classification Publications
 
-* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/abs/1611.06455){:target="_blank"} &emsp;[<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1611.06455.pdf){:target="_blank"}
+* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/abs/1611.06455){:target="_blank"} &emsp;[](https://arxiv.org/pdf/1611.06455.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/WangYO16"></div>  
-* [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1306.0239.pdf){:target="_blank"}
+* [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239){:target="_blank"} &emsp; [](https://arxiv.org/pdf/1306.0239.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>
-* [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf){:target="_blank"}
+* [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks){:target="_blank"} &emsp; [](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="NIPS2012_4824"></div>
 
 

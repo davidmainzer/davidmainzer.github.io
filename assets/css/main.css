@@ -12,3 +12,8 @@ a[href$=".pdf"]:after
   font-family: FontAwesome;
   content: "\00a0 \f1c1" 
 }
+
+a.cleanLink
+{
+  color : red;
+}

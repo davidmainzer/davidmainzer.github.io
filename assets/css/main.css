@@ -3,7 +3,7 @@ a[href^="http://"]:not([href*="davidmainzer.github.io"]):before,
 a[href^="https://"]:not([href*="davidmainzer.github.io"]):before
 {
   font-family: FontAwesome;
-  content: "\f08e " 
+  content: "\f08e \00a0\00a0"
 }
 
 a[href$=".pdf"] {

@@ -1,9 +1,11 @@
 
 a[href^="http://"]:not([href*="davidmainzer.github.io"]):not([href$=".pdf"]):before,
-a[href^="https://"]:not([href*="davidmainzer.github.io"]):not([href$=".pdf"]):before
+a[href^="https://"]:not([href*="davidmainzer.github.io"]):not([href$=".pdf"]):before,
+a[href^="https://"]:not([href="https://github.com/davidmainzer"]):before,
+a[href^="https://"]:not([href="http://creativecommons.org/licenses/by-sa/4.0/"]):before
 {
   font-family: FontAwesome;
-  content: "\f08e \00a0\00a0"
+  content: "\f08e \00a0\00a0";
 }
 
 /* PDF file */

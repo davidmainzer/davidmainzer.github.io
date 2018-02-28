@@ -15,7 +15,7 @@ a[href$=".pdf"]:after
 
 a.cleanLink:before
 {
-  content: none;
+  content: none !important;
 }
 
 a.cleanLink

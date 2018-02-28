@@ -15,5 +15,6 @@ a[href$=".pdf"]:after
 
 a.cleanLink
 {
+  all: unset;
   color : red;
 }

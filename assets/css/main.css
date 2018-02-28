@@ -1,6 +1,6 @@
 
-a[href^="http://"]:not([href*="davidmainzer.github.io"]):before,
-a[href^="https://"]:not([href*="davidmainzer.github.io"]):before
+a[href^="http://"]:not([href*="davidmainzer.github.io"]):not([href$=".pdf"]):before,
+a[href^="https://"]:not([href*="davidmainzer.github.io"]):not([href$=".pdf"]):before
 {
   font-family: FontAwesome;
   content: "\f08e \00a0\00a0"

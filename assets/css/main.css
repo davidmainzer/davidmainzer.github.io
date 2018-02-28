@@ -7,7 +7,8 @@ a:not([href^="http://davidmainzer.github.io"]):not([href^="#"]):not([href^="/"])
 a[href^="http://"]:not([href*="davidmainzer.github.io"]):before,
 a[href^="https://"]:not([href*="davidmainzer.github.io"]):before
 {
-    content: "\f08e (EXTERNAL) " 
+  font-family: FontAwesome;
+  content: "\f08e " 
 }
 
 a[href$=".pdf"] {

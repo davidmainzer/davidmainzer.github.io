@@ -86,6 +86,8 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 ### Machine Translation
 
+Neural machine translation attempts to build and train a single, large neural network. In interference step this neural network reads a sentence and outputs a correct translation.
+
 * [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473) [](https://arxiv.org/pdf/1409.0473.pdf)
 
 ## Deep Learning -- Some State-of-The-Art Publications

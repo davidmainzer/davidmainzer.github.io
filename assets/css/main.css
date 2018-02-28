@@ -17,9 +17,3 @@ a.cleanLink:before
 {
   content: none !important;
 }
-
-a.cleanLink
-{
-  all: unset;
-  color : red;
-}

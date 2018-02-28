@@ -22,19 +22,19 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Classes
 
-* [<i class="fa fa-external-link "></i> Coursera's Machine Learning Class](https://www.coursera.org/learn/machine-learning "Coursera's Machine Learning Class") - This Coursera class, taught by Andrew Ng
-* [<i class="fa fa-external-link "></i> Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim](https://www.ismll.uni-hildesheim.de/lehre/ml2-17s/script/index_en.html "Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim")
+* [Coursera's Machine Learning Class](https://www.coursera.org/learn/machine-learning "Coursera's Machine Learning Class") - This Coursera class, taught by Andrew Ng
+* [Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim](https://www.ismll.uni-hildesheim.de/lehre/ml2-17s/script/index_en.html "Information Systems and Machine Learning Lab (ISMLL) at University of Hildesheim")
 
 ### Reading
 
 #### Books
 
-* [<i class="fa fa-external-link "></i> Machine Learning by Chris Bishop](http://www.springer.com/gb/book/9780387310732)
-* [<i class="fa fa-external-link "></i> Machine Learning by Kevin Murphy](https://mitpress.mit.edu/books/machine-learning-0)
+* [Machine Learning by Chris Bishop](http://www.springer.com/gb/book/9780387310732)
+* [Machine Learning by Kevin Murphy](https://mitpress.mit.edu/books/machine-learning-0)
 
 ### Programming
 
-* [<i class="fa fa-external-link "></i> SciKitLearn](http://scikit-learn.org/stable/ "SciKitLearn")
+* [SciKitLearn](http://scikit-learn.org/stable/ "SciKitLearn")
 
 <hr>
 
@@ -42,14 +42,14 @@ This is a summary of some of the resources that I have either found useful mysel
 
 ### Reading
 
-* [<i class="fa fa-external-link "></i> Neural Networks & Deep Learning](http://neuralnetworksanddeeplearning.com/ "Neural Networks & Deep Learning") by Michael Nielsen
-* [<i class="fa fa-external-link "></i> Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville (2016)
+* [Neural Networks & Deep Learning](http://neuralnetworksanddeeplearning.com/ "Neural Networks & Deep Learning") by Michael Nielsen
+* [Deep Learning Book](http://www.deeplearningbook.org/ "Deep Learning Book") by Ian Goodfellow, Yoshua Bengio and Aaron Courville (2016)
 
 ### Programming / Frameworks
 
-* [<i class="fa fa-external-link "></i> Keras](https://keras.io/ "Keras")
-* [<i class="fa fa-external-link "></i> TensorFlow](https://www.tensorflow.org/ "TensorFlow")
-* [<i class="fa fa-external-link "></i> Theano](http://www.deeplearning.net/software/theano/ "Theano")
+* [Keras](https://keras.io/ "Keras")
+* [TensorFlow](https://www.tensorflow.org/ "TensorFlow")
+* [Theano](http://www.deeplearning.net/software/theano/ "Theano")
 
 <hr>
 

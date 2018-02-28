@@ -69,11 +69,11 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 
 #### Some Image-based Classification Publications
 
-* [<i class="fa fa-external-link "></i> Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/abs/1611.06455){:target="_blank"} &emsp;[<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1611.06455.pdf){:target="_blank"}
+* [Time Series Classification from Scratch with Deep Neural Networks: A Strong Baseline](https://arxiv.org/abs/1611.06455){:target="_blank"} &emsp;[<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1611.06455.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/WangYO16"></div>  
-* [<i class="fa fa-external-link "></i> Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1306.0239.pdf){:target="_blank"}
+* [Deep Learning using Linear Support Vector Machines](https://arxiv.org/abs/1306.0239){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://arxiv.org/pdf/1306.0239.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="DBLP:journals/corr/Tang13"></div>
-* [<i class="fa fa-external-link "></i> ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf){:target="_blank"}
+* [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks){:target="_blank"} &emsp; [<i class="fa fa-file-pdf-o fa-lg"></i>](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf){:target="_blank"}
   * <div class="bibtex_display" bibtexkeys="NIPS2012_4824"></div>
 
 
@@ -88,7 +88,7 @@ Using labeled datasets is known as *supervised learning*. In the following I pro
 ## Deep Learning -- Some State-of-The-Art Publications
 
 * [DensePose: Dense Human Pose Estimation In The Wild](https://arxiv.org/abs/1802.00434.pdf)
-  * [<i class="fa fa-external-link "></i> Project Site](http://densepose.org/ "Project Website")
+  * [Project Site](http://densepose.org/ "Project Website")
   * <div class="bibtex_display" bibtexkeys="Guler2018DensePose"></div>
 * [One Model to Learn them All](https://arxiv.org/pdf/1706.05137.pdf)
   * <div class="bibtex_display" bibtexkeys="kaiser2017one"></div>

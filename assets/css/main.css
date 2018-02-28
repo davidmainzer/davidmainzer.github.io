@@ -1,1 +1,5 @@
 
+a:not([href^="http://davidmainzer.github.io"]):not([href^="#"]):not([href^="/"]):not([href^="https://davidmainzer.github.io"])
+{
+  color : red;
+}

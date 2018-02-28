@@ -6,6 +6,9 @@ a[href^="https://"]:not([href*="davidmainzer.github.io"]):before
   content: "\f08e \00a0\00a0"
 }
 
-a[href$=".pdf"] {
-        /* PDF file */
+/* PDF file */
+a[href$=".pdf"]:after 
+{
+  font-family: FontAwesome;
+  content: "\00a0 \f1c1" 
 }

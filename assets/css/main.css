@@ -4,10 +4,10 @@ a:not([href^="http://davidmainzer.github.io"]):not([href^="#"]):not([href^="/"])
   color : red;
 }
 
-a[href^="http://"]:not([href*="davidmainzer.github.io"]):after,
-a[href^="https://"]:not([href*="davidmainzer.github.io"]):after
+a[href^="http://"]:not([href*="davidmainzer.github.io"]):before,
+a[href^="https://"]:not([href*="davidmainzer.github.io"]):before
 {
-    content: " (EXTERNAL)" 
+    content: "\f0a9 (EXTERNAL) " 
 }
 
 a[href$=".pdf"] {

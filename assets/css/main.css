@@ -13,6 +13,11 @@ a[href$=".pdf"]:after
   content: "\00a0 \f1c1" 
 }
 
+a.cleanLink:after
+{
+  content: none;
+}
+
 a.cleanLink
 {
   all: unset;

@@ -33,6 +33,7 @@ Since nearly 1.5 years we own a Freelander 2.
     * Use of high quality fuel --> problem still exists
     * Land Rover has no glue why this problem occurs. Land Rover would prefer to exchange all components at the customer's expense.
   * Oil inside intercooler
+  * DPF full -> DPF regeneration does not work properly 
   
 ### DIY
 

@@ -29,6 +29,9 @@ Since nearly 1.5 years we own a Freelander 2.
 ### Problems
   
   * Engine does not start if its cold outside (<-1°C)
+    * Fuel filter changed --> problem still exists
+    * Use of high quality fuel --> problem still exists
+    * Land Rover has no glue why this problem occurs. Land Rover would prefer to exchange all components at the customer's expense.
   * Oil inside intercooler
   
 ### DIY
@@ -40,7 +43,7 @@ Since nearly 1.5 years we own a Freelander 2.
   
 ### Why do we need this repair manual?
 
-Since Land Rover is not able to offer reasonable dates. We have to wait for month to get a repair date.
+Since Land Rover is not able to offer reasonable dates. We have to wait for months to get a repair date.
 
 Because Land Rover is so damn expensive!!!!
   * Land Rover charges ~1000€ for changing 4 glow plugs. WTF!

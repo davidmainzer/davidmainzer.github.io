@@ -366,6 +366,14 @@ function BibtexDisplay() {
     }
 
     this.createTemplate = function(entry) {
+        // Check if there are bibtex keys limiting the output (bibtexkeys="key|key2")
+        if (output[0].hasAttribute("bibtexkeys"))
+        {
+          var bitexkeys = output[0].getAttribute("bibtexkeys");
+          if(!entry["BIBTEXKEY"].match(bitexkeys))
+            return null;
+        }
+     
         // find template
         var tpl = $(".bibtex_template").clone().removeClass('bibtex_template');
 

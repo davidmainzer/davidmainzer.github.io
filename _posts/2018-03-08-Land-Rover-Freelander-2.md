@@ -17,14 +17,14 @@ Since nearly 1.5 years we own a Freelander 2.
 ### Engine
 
   * KW (PS) 112 KW (152 PS)
-  * Beschleunigung (0-100 km/h) 11.7 s
-  * Höchstgeschwindigkeit (km/h) 181 km
-  * Anzahl der Gänge 6
-  * Drehmoment 400 nm
-  * Kraftstoff Diesel
-  * Zylinder 4
-  * Getriebe Manuelles Getriebe
-  * Antriebsart Allrad permanent
+  * Acceleration: (0-100 km/h) 11.7 s
+  * Top speed: (km/h) 181
+  * Number of gears: 6
+  * Torque: 400 nm
+  * Fueal: Diesel
+  * Cylinder 4
+  * Gearing: Automatic
+  * Drive type: Allrad permanent
   
 ### Problems
   
@@ -47,8 +47,8 @@ Because Land Rover is so damn expensive!!!!
     * Why is it so expensive?? Because of its bad design! Steps to change the glow plugs:
       1. Disconnect the battery ground cable. Refer to: Specifications (414-00 Battery and Charging System - General Information, Specifications).
       1. Remove the intake manifold. YES you need to remove the intake manifold for changing the glow plugs!
-        1. Remove the fuel filter. Refer to: Fuel Filter (310-01B Fuel Tank and Lines - TD4 2.2L Diesel, Removal and Installation).
-        1. ...
+         1. Remove the fuel filter. Refer to: Fuel Filter (310-01B Fuel Tank and Lines - TD4 2.2L Diesel, Removal and Installation).
+         1. ... many steps to proceed. 
       1. To install, reverse the removal procedure.
 
 

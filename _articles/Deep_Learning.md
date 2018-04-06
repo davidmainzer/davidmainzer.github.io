@@ -101,3 +101,5 @@ Neural machine translation attempts to build and train a single, large neural ne
   * <div class="bibtex_display" bibtexkeys="sharif2016accessorize"></div>
 * [Review paper from Yann LeCun, Yoshua Bengio & Geoffrey Hinton](https://www.nature.com/articles/nature14539) [](https://www.nature.com/articles/nature14539.pdf)
   * <div class="bibtex_display" bibtexkeys="lecun2015deep"></div>
+* [Overview about Deep Learning by Jürgen Schmidhuber](https://arxiv.org/abs/1404.7828) [](https://arxiv.org/pdf/1404.7828.pdf)
+  * <div class="bibtex_display" bibtexkeys="Schmidhuber2014OverviewDL"></div>

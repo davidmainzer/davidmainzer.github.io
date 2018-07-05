@@ -28,19 +28,20 @@ https://github.com/fearedbliss/bliss-initramfs
 
 /opt/bliss-initramfs/pkg/hooks/Addon.py
 
+{% highlight bash %}
 class Addon(Hook):
-    # A list of kernel modules to include in the initramfs
-    # Format: "module1", "module2", "module3", ...
-    _files = [
-        # Uncomment the module below if you have encryption support built as a module, rather than built into the kernel:
-        #"dm-crypt",
+  # A list of kernel modules to include in the initramfs
+  # Format: "module1", "module2", "module3", ...
+  _files = [
+    # Uncomment the module below if you have encryption support built as a module, rather than built into the kernel:
+    #"dm-crypt",
 
-        # Add your modules below
-        #"i915",
-        #"nouveau",
-        "virtio"
-        "virtio_scsi"
-        "virtio_ring"
-        "virtio_pci"
-]
-
+    # Add your modules below
+    #"i915",
+    #"nouveau",
+    "virtio"
+    "virtio_scsi"
+    "virtio_ring"
+    "virtio_pci"
+  ]
+{% endhighlight bash %}

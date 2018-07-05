@@ -12,8 +12,13 @@ tags:
 
 I decided to move my Server from Strato to netcup. Therefore, I have to setup a fresh Gentoo as Root-Server. I will note some points and give hints to some interesting articles and manuals. 
 
-Server-Setup:
--	Filesystem ZFS
+# Requirements 
+We will use a single drive called 
+
+
+# Goal
+Server:
+-	Root-Filesystem ZFS
 
 
 
@@ -73,5 +78,8 @@ class Addon(Hook):
 
 
 
+TODO
+
+https://wiki.gentoo.org/wiki/Security_Handbook/
 
 

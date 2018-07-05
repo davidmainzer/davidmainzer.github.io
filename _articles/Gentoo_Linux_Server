@@ -14,7 +14,17 @@ I decided to move my Server from Strato to netcup. Therefore, I have to setup a 
 Server-Setup:
 -	Filesystem ZFS
 
+https://wiki.gentoo.org/wiki/User:Fearedbliss/Installing_Gentoo_Linux_On_ZFS
+
+sda1 grub
+sda2 boot
+sda3 rootfs -- ZFS
+
 https://github.com/fearedbliss/bliss-initramfs
+
+
+
+
 
 /opt/bliss-initramfs/pkg/hooks/Addon.py
 
@@ -33,3 +43,4 @@ class Addon(Hook):
         "virtio_ring"
         "virtio_pci"
 ]
+

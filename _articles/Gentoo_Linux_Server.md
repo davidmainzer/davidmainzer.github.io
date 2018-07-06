@@ -14,14 +14,13 @@ I decided to move my Server from Strato to netcup. Therefore, I have to setup a 
 
 # Requirements 
 We will use a single drive called 
-
+`/dev/sda`
 
 # Goal
 Server:
 -	Root-Filesystem ZFS
 
-
-
+# Partitioning
 
 sda1 grub
 sda2 boot

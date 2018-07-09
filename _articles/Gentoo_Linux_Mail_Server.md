@@ -1,7 +1,7 @@
 ---
 layout: article
-title:  "Gentoo Linux as Server"
-date:   2018-07-05 08:50:00
+title:  "Gentoo Linux as Mail-Server"
+date:   2018-07-09 08:00:00
 share: true
 toc: true
 comments: false
@@ -10,8 +10,16 @@ tags:
  - Article
 ---
 
-I decided to move my Server from Strato to netcup. Therefore, I have to setup a fresh Gentoo as Root-Server. 
-I will note some points and give hints to some interesting articles and manuals.
+I used a very good and detailed guide created by [Thomas Leister](https://thomas-leister.de/mailserver-debian-stretch/).
+Since I have a Gentoo Linux running I want to explain within this article how you can use this guide for Gentoo Linux.
+
+Dovecot
+Postfix
+MySQL
+Rspamd
+Postfix-Admin
+
+
 
 # Requirements 
 We will use a single drive called 
@@ -81,5 +89,5 @@ class Addon(Hook):
 
 
 # Links
-[Fearedbliss: Installing Gentoo Linux On ZFS (wiki)](https://wiki.gentoo.org/wiki/User:Fearedbliss/Installing_Gentoo_Linux_On_ZFS)
-[Fearedbliss: Github-Page](https://github.com/fearedbliss/bliss-initramfs)
+
+https://thomas-leister.de/mailserver-debian-stretch/

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Samsung S9 -- Root Rom"
+title: "Samsung S9 -- Root ROM"
 date: 2018-07-10 12:45:00
 share: true
 tags: 
 categories:
-description: Running a Rom with Root on my Samsung S9.
+description: Samsung S9 with Root Access.
 ---
 
-I tried different Roms but most of them do not support camera and therefore, I am not willing to use them currently.
+I tried different ROMs but most of them do not support camera and therefore, I am not willing to use them currently.
 
-Current I'm running SoLdieR9312's G96X | G95X CUSTOM ROMs (http://www.soldier9312.de/#).
+Current I'm running SoLdieR9312's modified Stock ROM ([Link](http://www.soldier9312.de/)).

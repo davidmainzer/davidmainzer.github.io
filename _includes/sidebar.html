@@ -7,6 +7,15 @@
   </ul>
 </div>
 
+<div class="sidebar ">
+  <h2>Recent Articles</h2>
+  <ul>
+    {% for post in site.articles limit:5 %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
 <div class="sidebar">
   <h2>Tags</h2>
   <ul class="sideBarTags">

@@ -25,3 +25,13 @@ At the end we will have a running Gentoo Server with:
 - MySQL
 - Rspamd
 - Postfix-Admin
+ 
+ # Mail-Server
+ 
+ ## Certifications
+ 
+ {% highlight bash %}
+  emerge -av app-crypt/certbot
+  emerge -av app-crypt/certbot-nginx
+ {% endhighlight bash %}
+ 

@@ -10,15 +10,18 @@ tags:
  - Article
 ---
 
-I used a very good and detailed guide created by [Thomas Leister](https://thomas-leister.de/mailserver-debian-stretch/).
-Since I have a Gentoo Linux running I want to explain within this article how you can use this guide for Gentoo Linux.
+I use a very good and detailed guide created by [Thomas Leister](https://thomas-leister.de/mailserver-debian-stretch/).
+Since I have a Gentoo Linux running I want to explain within this article how you can use this guide for Gentoo Linux. Therefore, please read this guide first to get an overview of all the stuff.
 
 # Requirements 
 
+You have to had a are running a Gentoo Linux with working internet connection.
+
 # Goal
 
-Dovecot
-Postfix
-MySQL
-Rspamd
-Postfix-Admin
+At the end we will have a running Gentoo Server with:
+- Dovecot
+- Postfix
+- MySQL
+- Rspamd
+- Postfix-Admin

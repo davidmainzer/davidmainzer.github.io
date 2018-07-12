@@ -11,7 +11,8 @@ tags:
 ---
 
 I use a very good and detailed guide created by [Thomas Leister](https://thomas-leister.de/mailserver-debian-stretch/).
-Since I have a Gentoo Linux running I want to explain within this article how you can use this guide for Gentoo Linux. Therefore, please read this guide first to get an overview of all the stuff.
+Since I have a Gentoo Linux running I want to explain within this article how you can use this guide for Gentoo Linux. 
+Therefore, please read this guide first to get an overview of all the stuff.
 
 # Requirements 
 
@@ -43,7 +44,7 @@ If you do not have mariadb installed already you have to configure it, therefore
   emerge -av --config dev-db/mariadb
 {% endhighlight bash %}
 
-Start Database and add them to your autostart:
+Start database and add them to your autostart:
 {% highlight bash %}
   rc-update add mysql default
   rc-service mysql start
@@ -118,7 +119,14 @@ Our Mail-setup will use 4 different tables. Therefore, we have to create them:
 ### TLS Policy-Tabelle
 
 {% highlight bash %}
-
+	CREATE TABLE `tlspolicies` (
+    `id` int unsigned NOT NULL AUTO_INCREMENT,
+    `domain` varchar(255) NOT NULL,
+    `policy` enum('none', 'may', 'encrypt', 'dane', 'dane-only', 'fingerprint', 'verify', 'secure') NOT NULL,
+    `params` varchar(255),
+    PRIMARY KEY (`id`),
+    UNIQUE KEY (`domain`)
+	);
 {% endhighlight bash %}
 
 # vmail-user
@@ -164,6 +172,7 @@ All configuration files are located at `/etc/dovecot/`.
 protocols = imap lmtp sieve
 {% endhighlight bash %}
 
+
 ### /etc/dovecot/conf.d/10-ssl.conf
 {% highlight bash %}
 # SSL/TLS support: yes, no, required. <doc/wiki/SSL.txt>
@@ -186,16 +195,19 @@ ssl_key  = /etc/letsencrypt/live/YOUR.MAIL.DOMAIN/privkey.pem
 ssl_cipher_list = ALL:!LOW:!SSLv2:!EXP:!aNULL
 {% endhighlight bash %}
 
+
 ### /etc/dovecot/conf.d/10-mail.conf
 
 If you want maildirs to use hierarchical directories, such as:
 * Maildir/folder/
 * Maildir/folder/subfolder/ 
-we have to add `LAYOUT=fs`
+Therefore, we have to add `LAYOUT=fs`:
+
 {% highlight bash %}
 mail_home = /home/vmail/%d/%n
 mail_location = maildir:~/Maildir:LAYOUT=fs
 {% endhighlight bash %}
+
 
 ### /etc/dovecot/conf.d/10-master.conf
 {% highlight bash %}
@@ -220,3 +232,147 @@ service imap-login {
   #vsz_limit = $default_vsz_limit
 }
 {% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/20-managesieve.conf 
+{% highlight bash %}
+service managesieve-login {
+    inet_listener sieve {
+        port = 4190
+    }
+}
+{% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/20-imap.conf
+{% highlight bash %}
+protocol imap {
+  # Space separated list of plugins to load (default is global mail_plugins).
+  mail_plugins = $mail_plugins quota imap_quota imap_sieve
+
+  # Maximum number of IMAP connections allowed for a user from each IP address.
+  # NOTE: The username is compared case-sensitively.
+  mail_max_userip_connections = 20
+  imap_idle_notify_interval = 29 mins
+} 
+{% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/20-lmtp.conf
+{% highlight bash %}
+protocol lmtp {
+  # Space separated list of plugins to load (default is global mail_plugins).
+  postmaster_address = postmaster@YOUR.MAIL.DOMAIN
+  mail_plugins = $mail_plugins sieve
+}
+{% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/auth-sql.conf
+{% highlight bash %}
+# Authentication for SQL users. Included from 10-auth.conf.
+# 
+# <doc/wiki/AuthDatabase.SQL.txt>
+
+passdb {
+  driver = sql
+
+  # Path for SQL configuration file, see example-config/dovecot-sql.conf.ext
+  args = /etc/dovecot/dovecot-sql.conf
+}
+
+# "prefetch" user database means that the passdb already provided the
+# needed information and there's no need to do a separate userdb lookup.
+# <doc/wiki/UserDatabase.Prefetch.txt>
+#userdb {
+#  driver = prefetch
+#}
+
+userdb {
+  driver = sql
+  args = /etc/dovecot/dovecot-sql.conf
+}
+{% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/15-mailboxes.conf
+{% highlight bash %}
+namespace inbox {
+  inbox = yes
+
+  # These mailboxes are widely used and could perhaps be created automatically:
+  mailbox Drafts {
+    auto = subscribe
+    special_use = \Drafts
+  }
+  mailbox Junk {
+    auto = subscribe
+    special_use = \Junk
+  }
+  mailbox Trash {
+    auto = subscribe
+    special_use = \Trash
+  }
+
+  # For \Sent mailboxes there are two widely used names. We'll mark both of
+  # them as \Sent. User typically deletes one of them if duplicates are created.
+  mailbox Sent {
+    auto = subscribe
+    special_use = \Sent
+  }
+  mailbox "Sent Messages" {
+    special_use = \Sent
+  }
+}
+
+{% endhighlight bash %}
+
+
+### /etc/dovecot/conf.d/90-sieve.conf
+{% highlight bash %}
+		###
+    ### Spam learning
+    ###
+    # From elsewhere to Spam folder
+    imapsieve_mailbox1_name = Spam
+    imapsieve_mailbox1_causes = COPY
+    imapsieve_mailbox1_before = file:/var/vmail/sieve/global/learn-spam.sieve
+
+    # From Spam folder to elsewhere
+    imapsieve_mailbox2_name = *
+    imapsieve_mailbox2_from = Spam
+    imapsieve_mailbox2_causes = COPY
+    imapsieve_mailbox2_before = file:/var/vmail/sieve/global/learn-ham.sieve
+
+    sieve_pipe_bin_dir = /usr/bin
+    sieve_global_extensions = +vnd.dovecot.pipe
+
+    quota = maildir:User quota
+    quota_exceeded_message = Benutzer %u hat das Speichervolumen überschritten. / User %u has exhausted allowed storage space.
+}
+{% endhighlight bash %}
+
+
+### /etc/dovecot/dovecot-sql.conf
+{% highlight bash %}
+driver=mysql
+connect = "host=127.0.0.1 dbname=vmail user=vmail password=vmaildbpass"
+default_pass_scheme = SHA512-CRYPT
+
+password_query = SELECT username AS user, domain, password FROM accounts WHERE username = '%n' AND domain = '%d' and enabled = true;
+user_query = SELECT concat('*:storage=', quota, 'M') AS quota_rule FROM accounts WHERE username = '%n' AND domain = '%d' AND sendonly = false;
+iterate_query = SELECT username, domain FROM accounts where sendonly = false;
+{% endhighlight bash %}
+
+Since `dovecot-sql.conf`contains sensitive data we secure the file:
+{% highlight bash %}
+chmod 440 dovecot-sql.conf
+{% endhighlight bash %}
+
+
+
+
+
+
+
+

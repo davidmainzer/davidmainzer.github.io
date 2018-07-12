@@ -129,7 +129,7 @@ Our Mail-setup will use 4 different tables. Therefore, we have to create them:
 	);
 {% endhighlight bash %}
 
-# vmail-user
+# Vmail User
 
 We will use `/home/vmail` as mail-server file storage directory (mailboxes, filter-scripts, ...):
 {% highlight bash %}
@@ -330,26 +330,25 @@ namespace inbox {
 
 ### /etc/dovecot/conf.d/90-sieve.conf
 {% highlight bash %}
-		###
-    ### Spam learning
-    ###
-    # From elsewhere to Spam folder
-    imapsieve_mailbox1_name = Spam
-    imapsieve_mailbox1_causes = COPY
-    imapsieve_mailbox1_before = file:/var/vmail/sieve/global/learn-spam.sieve
+  ###
+  ### Spam learning
+  ###
+  # From elsewhere to Spam folder
+  imapsieve_mailbox1_name = Spam
+  imapsieve_mailbox1_causes = COPY
+  imapsieve_mailbox1_before = file:/var/vmail/sieve/global/learn-spam.sieve
 
-    # From Spam folder to elsewhere
-    imapsieve_mailbox2_name = *
-    imapsieve_mailbox2_from = Spam
-    imapsieve_mailbox2_causes = COPY
-    imapsieve_mailbox2_before = file:/var/vmail/sieve/global/learn-ham.sieve
+  # From Spam folder to elsewhere
+  imapsieve_mailbox2_name = *
+  imapsieve_mailbox2_from = Spam
+  imapsieve_mailbox2_causes = COPY
+  imapsieve_mailbox2_before = file:/var/vmail/sieve/global/learn-ham.sieve
 
-    sieve_pipe_bin_dir = /usr/bin
-    sieve_global_extensions = +vnd.dovecot.pipe
+  sieve_pipe_bin_dir = /usr/bin
+  sieve_global_extensions = +vnd.dovecot.pipe
 
-    quota = maildir:User quota
-    quota_exceeded_message = Benutzer %u hat das Speichervolumen überschritten. / User %u has exhausted allowed storage space.
-}
+  quota = maildir:User quota
+  quota_exceeded_message = Benutzer %u hat das Speichervolumen überschritten. / User %u has exhausted allowed storage space.
 {% endhighlight bash %}
 
 
@@ -368,6 +367,38 @@ Since `dovecot-sql.conf`contains sensitive data we secure the file:
 {% highlight bash %}
 chmod 440 dovecot-sql.conf
 {% endhighlight bash %}
+
+## Global Sieve Filter Script for Spam Detection 
+
+Create the file `/home/vmail/sieve/global/spam-global.sieve`:
+{% highlight bash %}
+require "fileinto";
+
+if header :contains "X-Spam-Flag" "YES" {
+    fileinto "Spam";
+}
+
+if header :is "X-Spam" "Yes" {
+    fileinto "Spam";
+}
+{% endhighlight bash %}
+This script will move all emails taged with Spam-Flag header into `Spam` the folder.
+
+### Scripts for Spam Improvement (Rspamd)
+
+#### /home/vmail/sieve/global/learn-spam.sieve
+{% highlight bash %}
+require ["vnd.dovecot.pipe", "copy", "imapsieve"];
+pipe :copy "rspamc" ["learn_spam"];
+{% endhighlight bash %}
+
+#### /home/vmail/sieve/global/learn-ham.sieve
+{% highlight bash %}
+require ["vnd.dovecot.pipe", "copy", "imapsieve"];
+pipe :copy "rspamc" ["learn_ham"];
+{% endhighlight bash %}
+
+
 
 
 

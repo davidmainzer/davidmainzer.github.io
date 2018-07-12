@@ -70,8 +70,29 @@ class Addon(Hook):
   ]
 {% endhighlight bash %}
 
+## ZFS Snapshots
 
-## For Security Improvements
+We use `zfs-auto-snapshot` from portage to create automated snapshots.
+To enable automated snapshots you have to set an auto-snapshot parameter as stated in the installation output:
+
+{% highlight bash %}
+zfs set com.sun:auto-snapshot=true rpool/HOME
+zfs set com.sun:auto-snapshot=true rpool/HOME/root
+zfs set com.sun:auto-snapshot=true rpool/ROOT/gentoo
+{% endhighlight bash %}
+
+This will create snapshots every hour, day and week (depends on your setting). Here you can see an example output:
+{% highlight bash %}
+HOST / # zfs list -r -t snapshot -o name,creation
+NAME                                                    CREATION
+rpool/HOME@zfs-auto-snap_hourly-2018-07-11-1538         Wed Jul 11 15:38 2018
+rpool/HOME/root@zfs-auto-snap_hourly-2018-07-11-1538    Wed Jul 11 15:38 2018
+rpool/ROOT/gentoo@zfs-auto-snap_hourly-2018-07-11-1538  Wed Jul 11 15:38 2018
+HOST / # 
+{% endhighlight bash %}
+
+
+# For Security Improvements
 - portsentry
 - chkrootkit
 - fail2ban

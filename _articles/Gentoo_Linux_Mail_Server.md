@@ -398,7 +398,11 @@ require ["vnd.dovecot.pipe", "copy", "imapsieve"];
 pipe :copy "rspamc" ["learn_ham"];
 {% endhighlight bash %}
 
+Compile Sieve files: will generate *.svbin files
 
+{% highlight bash %}
+sievec FILE.sieve
+{% endhighlight bash %}
 
 # Postfix - Installation and Configuration
 
@@ -409,8 +413,7 @@ emerge -av mail-mta/postfix
 Ensure you have the use flag `mysql` enabled.
 
 
-
-## Mail-Queue Einstellungen
+## Mail-Queue Settings
 {% highlight bash %}
 maximal_queue_lifetime = 1h
 bounce_queue_lifetime = 1h
@@ -420,14 +423,14 @@ queue_run_delay = 5m
 {% endhighlight bash %}
 
 
-## TLS Einstellungen
+## TLS Settings
 {% highlight bash %}
 tls_preempt_cipherlist = yes
 tls_ssl_options = NO_COMPRESSION
 tls_high_cipherlist = EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA256:EECDH:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!IDEA:!ECDSA:kEDH:CAMELLIA128-SHA:AES128-SHA
 {% endhighlight bash %}
 
-### Ausgehende SMTP-Verbindungen (Postfix als Sender)
+### Outgoing SMTP-Connections (Postfix as sender)
 {% highlight bash %}
 smtp_tls_security_level = dane
 smtp_dns_support_level = dnssec
@@ -438,7 +441,7 @@ smtp_tls_ciphers = high
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
 {% endhighlight bash %}
 
-### Eingehende SMTP-Verbindungen
+### Incoming SMTP-Connections
 {% highlight bash %}
 smtpd_tls_security_level = may
 smtpd_tls_protocols = !SSLv2, !SSLv3
@@ -449,12 +452,12 @@ smtpd_tls_cert_file=/etc/letsencrypt/live/mail.mysystems.tld/fullchain.pem
 smtpd_tls_key_file=/etc/letsencrypt/live/mail.mysystems.tld/privkey.pem
 {% endhighlight bash %}
 
-## Lokale Mailzustellung an Dovecot
+## Local mail delivery using Dovecot
 {% highlight bash %}
 virtual_transport = lmtp:unix:private/dovecot-lmtp
 {% endhighlight bash %}
 
-## Spamfilter und DKIM-Signaturen via Rspamd
+## Spam-filter and DKIM-Sig via Rspamd
 {% highlight bash %}
 smtpd_milters = inet:localhost:11332
 non_smtpd_milters = inet:localhost:11332
@@ -463,11 +466,9 @@ milter_mail_macros =  i {mail_addr} {client_addr} {client_name} {auth_authen}
 milter_default_action = accept
 {% endhighlight bash %}
 
-## Server Restrictions für Clients, Empfänger und Relaying
-## (im Bezug auf S2S-Verbindungen. Mailclient-Verbindungen werden in master.cf im Submission-Bereich konfiguriert)
+## Server Restrictions for clients, receiver and relaying
 
-
-### Bedingungen, damit Postfix als Relay arbeitet (für Clients)
+### Settings, Postfix as Relay (for clients)
 {% highlight bash %}
 smtpd_relay_restrictions =      reject_non_fqdn_recipient
                                 reject_unknown_recipient_domain

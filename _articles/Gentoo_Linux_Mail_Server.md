@@ -71,7 +71,7 @@ Next step we have to use our database `vmail`:
 {% endhighlight bash %}
 
 
-** CHECK IF WE NEED THIS ... SINCE WE WILL USE POSTFIX-ADMIN **
+** CHECK IF YOU NEED THIS ... SINCE WE WILL USE POSTFIX-ADMIN **
 
 Our Mail-setup will use 4 different tables. Therefore, we have to create them:
 
@@ -410,31 +410,25 @@ Ensure you have the use flag `mysql` enabled.
 
 
 
-
-
-
-
-##
 ## Mail-Queue Einstellungen
-##
-
+{% highlight bash %}
 maximal_queue_lifetime = 1h
 bounce_queue_lifetime = 1h
 maximal_backoff_time = 15m
 minimal_backoff_time = 5m
 queue_run_delay = 5m
+{% endhighlight bash %}
 
 
-##
 ## TLS Einstellungen
-###
-
+{% highlight bash %}
 tls_preempt_cipherlist = yes
 tls_ssl_options = NO_COMPRESSION
 tls_high_cipherlist = EDH+CAMELLIA:EDH+aRSA:EECDH+aRSA+AESGCM:EECDH+aRSA+SHA256:EECDH:+CAMELLIA128:+AES128:+SSLv3:!aNULL:!eNULL:!LOW:!3DES:!MD5:!EXP:!PSK:!DSS:!RC4:!SEED:!IDEA:!ECDSA:kEDH:CAMELLIA128-SHA:AES128-SHA
+{% endhighlight bash %}
 
 ### Ausgehende SMTP-Verbindungen (Postfix als Sender)
-
+{% highlight bash %}
 smtp_tls_security_level = dane
 smtp_dns_support_level = dnssec
 smtp_tls_policy_maps = mysql:/etc/postfix/sql/tls-policy.cf
@@ -442,10 +436,10 @@ smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
 smtp_tls_protocols = !SSLv2, !SSLv3
 smtp_tls_ciphers = high
 smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
-
+{% endhighlight bash %}
 
 ### Eingehende SMTP-Verbindungen
-
+{% highlight bash %}
 smtpd_tls_security_level = may
 smtpd_tls_protocols = !SSLv2, !SSLv3
 smtpd_tls_ciphers = high
@@ -453,123 +447,123 @@ smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
 
 smtpd_tls_cert_file=/etc/letsencrypt/live/mail.mysystems.tld/fullchain.pem
 smtpd_tls_key_file=/etc/letsencrypt/live/mail.mysystems.tld/privkey.pem
+{% endhighlight bash %}
 
-
-##
 ## Lokale Mailzustellung an Dovecot
-##
-
+{% highlight bash %}
 virtual_transport = lmtp:unix:private/dovecot-lmtp
+{% endhighlight bash %}
 
-
-##
 ## Spamfilter und DKIM-Signaturen via Rspamd
-##
-
+{% highlight bash %}
 smtpd_milters = inet:localhost:11332
 non_smtpd_milters = inet:localhost:11332
 milter_protocol = 6
 milter_mail_macros =  i {mail_addr} {client_addr} {client_name} {auth_authen}
 milter_default_action = accept
+{% endhighlight bash %}
 
-
-
-##
 ## Server Restrictions für Clients, Empfänger und Relaying
 ## (im Bezug auf S2S-Verbindungen. Mailclient-Verbindungen werden in master.cf im Submission-Bereich konfiguriert)
-##
+
 
 ### Bedingungen, damit Postfix als Relay arbeitet (für Clients)
+{% highlight bash %}
 smtpd_relay_restrictions =      reject_non_fqdn_recipient
                                 reject_unknown_recipient_domain
                                 permit_mynetworks
                                 reject_unauth_destination
-
+{% endhighlight bash %}
 
 ### Bedingungen, damit Postfix ankommende E-Mails als Empfängerserver entgegennimmt (zusätzlich zu relay-Bedingungen)
 ### check_recipient_access prüft, ob ein account sendonly ist
+{% highlight bash %}
 smtpd_recipient_restrictions = check_recipient_access mysql:/etc/postfix/sql/recipient-access.cf
-
+{% endhighlight bash %}
 
 ### Bedingungen, die SMTP-Clients erfüllen müssen (sendende Server)
+{% highlight bash %}
 smtpd_client_restrictions =     permit_mynetworks
                                 check_client_access hash:/etc/postfix/without_ptr
                                 reject_unknown_client_hostname
-
+{% endhighlight bash %}
 
 ### Wenn fremde Server eine Verbindung herstellen, müssen sie einen gültigen Hostnamen im HELO haben.
+{% highlight bash %}
 smtpd_helo_required = yes
 smtpd_helo_restrictions =   permit_mynetworks
                             reject_invalid_helo_hostname
                             reject_non_fqdn_helo_hostname
                             reject_unknown_helo_hostname
+{% endhighlight bash %}
 
 # Clients blockieren, wenn sie versuchen zu früh zu senden
+{% highlight bash %}
 smtpd_data_restrictions = reject_unauth_pipelining
+{% endhighlight bash %}
 
-
-##
 ## Restrictions für MUAs (Mail user agents)
-##
-
+{% highlight bash %}
 mua_relay_restrictions = reject_non_fqdn_recipient,reject_unknown_recipient_domain,permit_mynetworks,permit_sasl_authenticated,reject
 mua_sender_restrictions = permit_mynetworks,reject_non_fqdn_sender,reject_sender_login_mismatch,permit_sasl_authenticated,reject
 mua_client_restrictions = permit_mynetworks,permit_sasl_authenticated,reject
+{% endhighlight bash %}
 
 
-##
 ## Postscreen Filter
-##
 
 ### Postscreen Whitelist / Blocklist
+{% highlight bash %}
 postscreen_access_list =        permit_mynetworks
                                 cidr:/etc/postfix/postscreen_access
 postscreen_blacklist_action = drop
-
+{% endhighlight bash %}
 
 # Verbindungen beenden, wenn der fremde Server es zu eilig hat
+{% highlight bash %}
 postscreen_greet_action = drop
-
+{% endhighlight bash %}
 
 ### DNS blocklists
+{% highlight bash %}
 postscreen_dnsbl_threshold = 2
 postscreen_dnsbl_sites =    ix.dnsbl.manitu.net*2
                             zen.spamhaus.org*2
 postscreen_dnsbl_action = drop
+{% endhighlight bash %}
 
 
-##
 ## MySQL Abfragen
-##
-
+{% highlight bash %}
 virtual_alias_maps = mysql:/etc/postfix/sql/aliases.cf
 virtual_mailbox_maps = mysql:/etc/postfix/sql/accounts.cf
 virtual_mailbox_domains = mysql:/etc/postfix/sql/domains.cf
 local_recipient_maps = $virtual_mailbox_maps
+{% endhighlight bash %}
 
-
-##
 ## Sonstiges
-##
 
 ### Maximale Größe der gesamten Mailbox (soll von Dovecot festgelegt werden, 0 = unbegrenzt)
+{% highlight bash %}
 mailbox_size_limit = 0
+{% endhighlight bash %}
 
 ### Maximale Größe eingehender E-Mails in Bytes (50 MB)
+{% highlight bash %}
 message_size_limit = 52428800
+{% endhighlight bash %}
 
 ### Keine System-Benachrichtigung für Benutzer bei neuer E-Mail
+{% highlight bash %}
 biff = no
+{% endhighlight bash %}
 
 ### Nutzer müssen immer volle E-Mail Adresse angeben - nicht nur Hostname
+{% highlight bash %}
 append_dot_mydomain = no
+{% endhighlight bash %}
 
 ### Trenn-Zeichen für "Address Tagging"
+{% highlight bash %}
 recipient_delimiter = +
-
-
-
-
-
-
-
+{% endhighlight bash %}

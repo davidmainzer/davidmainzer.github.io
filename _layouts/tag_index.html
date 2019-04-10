@@ -5,6 +5,8 @@ layout: page
 
   <div class="post">
     <h2 class="post_title">{{page.title}}</h2>
+    
+    <h2 class="post_title"> Posts </h2>
     <ul>
       {% for post in site.posts %}
         {% for tag in post.tags %}
@@ -17,8 +19,10 @@ layout: page
           {% endif %}
         {% endfor %}
       {% endfor %}
-      
-      <h2 class="post_title"> Articles </h2>
+    </ul>
+    
+    <h2 class="post_title"> Articles </h2>
+    <ul>
       {% for art in site.articles %}
         {% for tag in art.tags %}
           {% if tag == page.tag %}

@@ -15,11 +15,12 @@ tags:
 # GIT Log
 
 ## Alias for log using pretty formatting
+{% highlight bash %}
 git config --global alias.lol "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=local --graph"
 git config --global alias.lol20 "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=local --graph -20"
 git config --global alias.lola "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=local --graph --all"
 git config --global alias.lola20 "log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=local --graph --all -20"
-
+{% endhighlight bash %}
 
 # How to Remove Complete GIT History
 

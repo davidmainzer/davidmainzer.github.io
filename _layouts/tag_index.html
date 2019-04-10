@@ -20,13 +20,17 @@ layout: page
       
       
       {% for art in site.articles %}
-        <li>
-          <div class="post-time">
-            <i class="fa fa-calendar"></i>
-            <time>{{ art.date | date: "%d-%m-%Y" }}</time>
-            <a href="{{ art.url | prepend: site.url }}">{{ art.title }}</a>
-          </div>
-        </li>
+        {% for tag in art.tags %}
+          {% if tag == page.tag %}
+            <li>
+              <div class="post-time">
+                <i class="fa fa-calendar"></i>
+                <time>{{ art.date | date: "%d-%m-%Y" }}</time>
+                <a href="{{ art.url | prepend: site.url }}">{{ art.title }}</a>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     </ul>
   </div>
